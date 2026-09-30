@@ -23,21 +23,28 @@
      color="#ff2a8a"> 
    </a-box> 
  
-   <a-plane 
+   <!-- <a-plane 
      position="0 0 -4" 
      rotation="-90 0 0" 
      width="10" 
      height="10" 
      color="#ff6a00"> 
-   </a-plane> 
+   </a-plane>  -->
  
    <a-sky color="#241b2f"></a-sky> 
 
-<a-entity environment></a-entity>
+<a-entity environment="
+  active: true;
+  preset: egypt;
+  dressingColor:#ff009e;
+  ground:hills;
+  groundYScale:10;
+  skyColor:#ff009e;
+  "></a-entity>
 
-   <material="color:#0f1fff"></material>
+   <!-- <material="color:#0f1fff"></material>
 <a-box position="0.684 1.597 -0.491" color="#ff2a8a" material="color: #0f1fff" rotation="-0.6302535746439055 -167.87663397333122 2.1199438419840457" scale="-0.682 -0.672 1.279"> 
-   </a-box>
+   </a-box> -->
  
  </a-scene> 
  
