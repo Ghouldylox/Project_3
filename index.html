@@ -16,29 +16,36 @@
  
 <body> 
  
-<a-assets>
-  <img 
-  id="stars" 
-  src="images/shell.jpg">
-  <a-asset-item 
-  id="cat" 
-  src="images/lowpoly_toro_kuro.glb"></a-asset-item>
-</a-assets>
+<a-asset>
 
- <a-scene>
-  <a-gltf-model
-    src="#cat"
-    position="0 1 -3"
-    scale="10 10 10"
-    animation="property: rotation; to: 0 360 0; loop: true; dur: 3000">
-  </a-gltf-model>
+   <img
+    id="stars"
+   src="images/shell.jpg">
 
-  <a-box
-    position="0 1 -3"
-    material="src: #stars">
-  </a-box>
-  
-</a-scene>
+    <a-asset-item 
+   id="cat" 
+   src="images/low poly toro & kuro.glb"> 
+ </a-asset-item> 
+
+
+</a-asset>
+
+ <a-scene> 
+ <!-- everything you want in the 3D world, put here -->
+   
+ <a-gltf-model
+  src="#cat"
+  position="0 1 -3" 
+  scale="10 10 10"> 
+    <animation="property: rotation; to: 0 360 0; loop: true; dur: 3000"> 
+</a-gltf-model>
+
+ 
+ <a-box 
+     position="0 1 -3" 
+     color="#ff2a8a"
+     src="#stars">
+   </a-box> 
  
    <!-- <a-plane 
      position="0 0 -4" 
